@@ -1,0 +1,6 @@
+.DS_Store
+.trae/
+.trae-html-share-packages/
+output/
+node_modules/
+
