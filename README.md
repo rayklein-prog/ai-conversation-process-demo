@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-启用 GitHub Pages 后，仓库首页的 **Deployments** 会显示最新预览地址。根目录的 `index.html` 是内嵌素材的单文件预览入口，可直接由 Pages 发布。
+启用 GitHub Pages 后，仓库首页的 **Deployments** 会显示最新预览地址。GitHub Actions 会发布 `public-release/` 目录。
 
 ## 本地打开
 
@@ -13,12 +13,12 @@
 ## 目录
 
 - `ai-conversation.html`：可编辑的单文件源码。
-- `index.html`：内嵌形象素材的 GitHub Pages 预览入口。
-- `public-release/`：GitHub Pages 发布内容。
+- `index.html`：内嵌形象素材的独立预览副本。
+- `public-release/`：GitHub Pages 实际发布内容。
 - `assets/figma/`：Figma 导出的图标和形象素材。
 - `PROCESS-LOADING-SPEC.md`：过程状态、编组、滚动、加载提示与事件协议。
 - `AI-CONVERSATION-README.md`：设计对齐和原型背景记录。
 
 ## 发布规则
 
-GitHub Pages 从 `main` 分支根目录发布 `index.html`。更新页面时，同步 `ai-conversation.html` 到 `public-release/index.html`，再生成根目录 `index.html` 后推送即可。
+推送到 `main` 后，GitHub Actions 将 `public-release/` 部署到 Pages。更新页面时，同步 `ai-conversation.html` 到 `public-release/index.html`，再推送即可。
