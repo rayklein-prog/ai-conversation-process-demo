@@ -2,7 +2,7 @@
 
 直接打开 `ai-conversation.html`。HTML、CSS、JavaScript 以及从 Figma 导出的原始图标和数字人素材均已内嵌，不需要安装依赖或联网。
 
-过程加载的状态、分组、异常、动画、滚动和真实事件接入规则见 [PROCESS-LOADING-SPEC.md](PROCESS-LOADING-SPEC.md)。
+过程加载的状态、分组、异常、动画、滚动和真实事件接入规则见 [过程加载与交互规则.md](过程加载与交互规则.md)。
 
 ## 设计依据
 
