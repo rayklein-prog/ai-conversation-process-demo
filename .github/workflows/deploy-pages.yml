@@ -28,7 +28,7 @@ jobs:
       - name: Upload release package
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public-release
+          path: 02-process-loading/public-release
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
